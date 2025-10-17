@@ -40,7 +40,9 @@ module pmc_constants
      !> Acceleration due to gravity (m s^{-2}).
      real(kind=dp) :: std_grav = 9.80665d0
      !> Accomodation coefficient (have also used 0.045).
-     real(kind=dp) :: accom_coeff = 1d0
+     !> real(kind=dp) :: accom_coeff = 1d0
+     !> L. Fierce changed to 0.65 to be consistent with MAM
+     real(kind=dp) :: accom_coeff = 0.65d0
 
      !> Equilibrium water vapor pressure at 273 K (Pa).
      real(kind=dp) :: water_eq_vap_press = 611d0
